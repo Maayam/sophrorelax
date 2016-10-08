@@ -1,0 +1,19 @@
+{% extends 'admin-base.html.twig' %}
+
+{% block body %}
+<h2>Liste des pages du site:</h2>
+<div><a href="/add">Créer une nouvelle page</a></div>
+<ul class="list-unstyled">
+{% for page in pages %}
+	<li class="nav-item">
+		{{page.name}}
+		<ul>
+			<li><a href="/edit/{{page.id}}">Modifier</a></li>
+			<li><a href="/delete/{{page.id}}">Supprimer</a></li>
+			<!-- Send to Drafts / Publish if Draft -->
+		</ul>
+	</li>
+{% endfor %}
+</ul>
+<div><a href="/add">Créer une nouvelle page</a></div>
+{% endblock %}

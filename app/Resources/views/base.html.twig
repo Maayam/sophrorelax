@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  {% block meta %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="">
+    <meta name="description" content="sophro44 website">
+  {% endblock %}
+
+  {% block headerAssets %}
+    <link rel="stylesheet" href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('bower_components/font-awesome/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/main.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/addons.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lato|Cormorant+Garamond" rel="stylesheet">
+    <link rel="shortcut icon" href="{ asset('img/logo/logo-32.ico')}" type="image/x-icon">
+    <link rel="canonical" href="">
+  {% endblock %}
+
+  {% block pageTitle %}<title>sophro44</title>{% endblock %}
+</head>
+<body>
+
+{% block nav %}
+  {% include 'partial/nav.html.twig' %}
+{% endblock %}
+
+<!-- END NAV  -->
+
+<!-- MAIN SECTION -->
+<section class="container-fluid page-bg accueil row"> <!-- HAS BG on the whole page -->
+  <article id="content" class="blacked col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+    <header class="text-center">
+      <img src="img/logo/logo-250-text.png" alt="Logo de Sophro 44" class="brand-logo">
+      <h1>Sophrologie Relaxation Art Thérapie</h1>
+      <small>&Agrave; l'intérieur de soi, vers le chemin du bien-être</small>
+    </header>
+    
+    <hr>
+{% block body %}
+  {% if content is defined %}
+    {{ content | raw }}
+  {% endif %}
+{% endblock %}
+  </article>
+</section>
+<!-- END MAIN SECTION -->
+
+<!-- FOOTER SECTION  -->
+{% block footer %}
+<footer id="page-footer">
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">
+      <h2><i class="fa fa-user" aria-hidden="true"></i> Corinne Alexandre</h2>
+      <ul class="list-unstyled">
+          <li>Sophrologue certifié</li>
+          <li>
+            <i class="fa fa-envelope" aria-hidden="true"></i> 
+            <a href="mailto:cosophrorelax44@gmail.com?Subject=Prise%20de%20%contact%20depuis%20le%20site">cosophrorelax44@gmail.com
+            </a>
+          </li>
+          </li>
+          <li><i class="fa fa-phone" aria-hidden="true"></i> 06.95.61.81.03 sur RDV</li>
+      </ul>
+    </div>
+    <div class="col-sm-3 col-sm-offset-3">
+      <h2>Site Map</h2>
+      <ul class="list-unstyled">
+      {% for item in menuItems %}
+        <li><a href="/{{item.name}}">{{item.name}}</a></li>
+      {% endfor %}
+        <li><a href="/list">Panneau d'administration</a></li>
+      </ul>
+    </div>
+  </div> <!-- END ROW -->
+</footer>
+{% endblock %}
+
+{% block footerAssets%}
+<script href="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js' )}}" type="text/javascript"></script>
+{% endblock %}
+
+<!-- END FOOTER  -->
+</body>
+</html>

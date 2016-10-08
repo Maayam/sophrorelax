@@ -1,0 +1,12 @@
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+<ul class="nav nav-pills nav-justified">
+{% for item in menuItems %}
+	{% if name == item.name %}
+		<li class="nav-item"><a class="active" href="/{{item.name}}" class="active">{{item.name}}</a></li>
+	{% else %}
+		<li class="nav-item"><a href="/{{item.name}}">{{item.name}}</a></li>
+	{% endif %}
+{% endfor %}
+</ul>
+
+</nav>
