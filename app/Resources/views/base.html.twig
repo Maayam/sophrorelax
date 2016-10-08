@@ -21,7 +21,7 @@
 
   {% block pageTitle %}<title>sophro44</title>{% endblock %}
 </head>
-<body>
+<body class="accueil">
 
 {% block nav %}
   {% include 'partial/nav.html.twig' %}
@@ -30,8 +30,8 @@
 <!-- END NAV  -->
 
 <!-- MAIN SECTION -->
-<section class="container-fluid page-bg accueil row"> <!-- HAS BG on the whole page -->
-  <article id="content" class="blacked col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+<section class="container-fluid page-bg row"> <!-- HAS BG on the whole page -->
+  <article id="content" class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 content">
     <header class="text-center">
       <img src="img/logo/logo-250-text.png" alt="Logo de Sophro 44" class="brand-logo">
       <h1>Sophrologie Relaxation Art Thérapie</h1>
@@ -47,11 +47,9 @@
   </article>
 </section>
 <!-- END MAIN SECTION -->
-
 <!-- FOOTER SECTION  -->
 {% block footer %}
-<footer id="page-footer">
-  <div class="row">
+<footer class="row page-footer">
     <div class="col-sm-5 col-sm-offset-1">
       <h2><i class="fa fa-user" aria-hidden="true"></i> Corinne Alexandre</h2>
       <ul class="list-unstyled">
@@ -74,7 +72,6 @@
         <li><a href="/list">Panneau d'administration</a></li>
       </ul>
     </div>
-  </div> <!-- END ROW -->
 </footer>
 {% endblock %}
 
