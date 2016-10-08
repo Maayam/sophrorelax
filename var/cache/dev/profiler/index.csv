@@ -1,0 +1,4 @@
+288049,127.0.0.1,GET,http://localhost:8000/,1475887113,,200
+6ca92a,127.0.0.1,GET,http://localhost:8000/%7B%20asset('img/logo/logo-32.ico')%7D,1475887117,3a1295,200
+3a1295,127.0.0.1,GET,http://localhost:8000/%7B%20asset('img/logo/logo-32.ico')%7D,1475887117,,404
+795763,127.0.0.1,GET,http://localhost:8000/S%C3%A9ances%20et%20Ateliers,1475887119,,200
