@@ -22,8 +22,8 @@ class __TwigTemplate_0573ae2f27cec4f9552de37605e86f092bc3264fec3afcce6b17dcdc889
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_8fb9f3ff2c74ec09d5984d226cc4a34750e03fa5ff99dd31e3361c3157eb5bc2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_8fb9f3ff2c74ec09d5984d226cc4a34750e03fa5ff99dd31e3361c3157eb5bc2->enter($__internal_8fb9f3ff2c74ec09d5984d226cc4a34750e03fa5ff99dd31e3361c3157eb5bc2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_bc4212b3f172ebf3d99ce2f13335f78def4bdb1a0e7df375c7635ffe1e3f4398 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_bc4212b3f172ebf3d99ce2f13335f78def4bdb1a0e7df375c7635ffe1e3f4398->enter($__internal_bc4212b3f172ebf3d99ce2f13335f78def4bdb1a0e7df375c7635ffe1e3f4398_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -73,41 +73,47 @@ class __TwigTemplate_0573ae2f27cec4f9552de37605e86f092bc3264fec3afcce6b17dcdc889
       <img src=\"img/logo/logo-250-text.png\" alt=\"Logo de Sophro 44\" class=\"brand-logo\">
       <h1>Sophrologie Relaxation Art Thérapie</h1>
       <small>&Agrave; l'intérieur de soi, vers le chemin du bien-être</small>
+      <p class=\"lead\">
+        Consacrer un moment de détente rien que pour soi, faire une pause pour se ressourcer est devenu un besoin vital. 
+      Parce que la sophrologie permet d'apaiser les tensions et de s'écouter, la relaxation est la clé de notre bien-être.
+      Savoir être en accord avec soi-même et apprendre à lâcher prise est un véritable trésor.
+      Saurez-vous en profiter?
+      </p>
     </header>
     
     <hr>
 ";
-        // line 46
+        // line 52
         $this->displayBlock('body', $context, $blocks);
-        // line 51
+        // line 57
         echo "  </article>
 </section>
 <!-- END MAIN SECTION -->
 <!-- FOOTER SECTION  -->
 ";
-        // line 55
+        // line 61
         $this->displayBlock('footer', $context, $blocks);
-        // line 81
+        // line 87
         echo "
 ";
-        // line 82
+        // line 88
         $this->displayBlock('footerAssets', $context, $blocks);
-        // line 85
+        // line 91
         echo "
 <!-- END FOOTER  -->
 </body>
 </html>
 ";
         
-        $__internal_8fb9f3ff2c74ec09d5984d226cc4a34750e03fa5ff99dd31e3361c3157eb5bc2->leave($__internal_8fb9f3ff2c74ec09d5984d226cc4a34750e03fa5ff99dd31e3361c3157eb5bc2_prof);
+        $__internal_bc4212b3f172ebf3d99ce2f13335f78def4bdb1a0e7df375c7635ffe1e3f4398->leave($__internal_bc4212b3f172ebf3d99ce2f13335f78def4bdb1a0e7df375c7635ffe1e3f4398_prof);
 
     }
 
     // line 4
     public function block_meta($context, array $blocks = array())
     {
-        $__internal_2f12c15117d0416a87a20e0216caa51b006f1ae12c869cc21d0af85ba985f7f3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_2f12c15117d0416a87a20e0216caa51b006f1ae12c869cc21d0af85ba985f7f3->enter($__internal_2f12c15117d0416a87a20e0216caa51b006f1ae12c869cc21d0af85ba985f7f3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "meta"));
+        $__internal_dadf6890b03403ba24d96bd927dda4ee307be09ceba2f4c7284b433b943ab9c9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_dadf6890b03403ba24d96bd927dda4ee307be09ceba2f4c7284b433b943ab9c9->enter($__internal_dadf6890b03403ba24d96bd927dda4ee307be09ceba2f4c7284b433b943ab9c9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "meta"));
 
         // line 5
         echo "    <meta charset=\"utf-8\">
@@ -117,15 +123,15 @@ class __TwigTemplate_0573ae2f27cec4f9552de37605e86f092bc3264fec3afcce6b17dcdc889
     <meta name=\"description\" content=\"sophro44 website\">
   ";
         
-        $__internal_2f12c15117d0416a87a20e0216caa51b006f1ae12c869cc21d0af85ba985f7f3->leave($__internal_2f12c15117d0416a87a20e0216caa51b006f1ae12c869cc21d0af85ba985f7f3_prof);
+        $__internal_dadf6890b03403ba24d96bd927dda4ee307be09ceba2f4c7284b433b943ab9c9->leave($__internal_dadf6890b03403ba24d96bd927dda4ee307be09ceba2f4c7284b433b943ab9c9_prof);
 
     }
 
     // line 12
     public function block_headerAssets($context, array $blocks = array())
     {
-        $__internal_5140e5d22e7ccfafd5704d85cd826a9b45eeff59da95f4609dca46352d1d6611 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_5140e5d22e7ccfafd5704d85cd826a9b45eeff59da95f4609dca46352d1d6611->enter($__internal_5140e5d22e7ccfafd5704d85cd826a9b45eeff59da95f4609dca46352d1d6611_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "headerAssets"));
+        $__internal_a8e5cf35dd232700fb01ba2d750953e75f320c70306298b3ba02ca6f6e361f05 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_a8e5cf35dd232700fb01ba2d750953e75f320c70306298b3ba02ca6f6e361f05->enter($__internal_a8e5cf35dd232700fb01ba2d750953e75f320c70306298b3ba02ca6f6e361f05_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "headerAssets"));
 
         // line 13
         echo "    <link rel=\"stylesheet\" href=\"";
@@ -148,63 +154,63 @@ class __TwigTemplate_0573ae2f27cec4f9552de37605e86f092bc3264fec3afcce6b17dcdc889
     <link rel=\"canonical\" href=\"\">
   ";
         
-        $__internal_5140e5d22e7ccfafd5704d85cd826a9b45eeff59da95f4609dca46352d1d6611->leave($__internal_5140e5d22e7ccfafd5704d85cd826a9b45eeff59da95f4609dca46352d1d6611_prof);
+        $__internal_a8e5cf35dd232700fb01ba2d750953e75f320c70306298b3ba02ca6f6e361f05->leave($__internal_a8e5cf35dd232700fb01ba2d750953e75f320c70306298b3ba02ca6f6e361f05_prof);
 
     }
 
     // line 22
     public function block_pageTitle($context, array $blocks = array())
     {
-        $__internal_57af04c8f7bedb355d1586f43f0b86440e7c240ba27831826e8d5e30a3e5c28f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_57af04c8f7bedb355d1586f43f0b86440e7c240ba27831826e8d5e30a3e5c28f->enter($__internal_57af04c8f7bedb355d1586f43f0b86440e7c240ba27831826e8d5e30a3e5c28f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageTitle"));
+        $__internal_d6c6605c1ef69e202f313fb062671a14998ff4d20bd4eeccf77eb750d96f96e4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d6c6605c1ef69e202f313fb062671a14998ff4d20bd4eeccf77eb750d96f96e4->enter($__internal_d6c6605c1ef69e202f313fb062671a14998ff4d20bd4eeccf77eb750d96f96e4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "pageTitle"));
 
         echo "<title>sophro44</title>";
         
-        $__internal_57af04c8f7bedb355d1586f43f0b86440e7c240ba27831826e8d5e30a3e5c28f->leave($__internal_57af04c8f7bedb355d1586f43f0b86440e7c240ba27831826e8d5e30a3e5c28f_prof);
+        $__internal_d6c6605c1ef69e202f313fb062671a14998ff4d20bd4eeccf77eb750d96f96e4->leave($__internal_d6c6605c1ef69e202f313fb062671a14998ff4d20bd4eeccf77eb750d96f96e4_prof);
 
     }
 
     // line 30
     public function block_nav($context, array $blocks = array())
     {
-        $__internal_0c448a6babed03ff14b06c343e322343011b7d8855f0faff610cf88e6a7c0de1 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_0c448a6babed03ff14b06c343e322343011b7d8855f0faff610cf88e6a7c0de1->enter($__internal_0c448a6babed03ff14b06c343e322343011b7d8855f0faff610cf88e6a7c0de1_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "nav"));
+        $__internal_904cba29a10d5fa8ccf2b2a3fb9b4e901e623458e5b3362057ecb24a75b30bb3 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_904cba29a10d5fa8ccf2b2a3fb9b4e901e623458e5b3362057ecb24a75b30bb3->enter($__internal_904cba29a10d5fa8ccf2b2a3fb9b4e901e623458e5b3362057ecb24a75b30bb3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "nav"));
 
         // line 31
         echo "  ";
         $this->loadTemplate("partial/nav.html.twig", "base.html.twig", 31)->display($context);
         
-        $__internal_0c448a6babed03ff14b06c343e322343011b7d8855f0faff610cf88e6a7c0de1->leave($__internal_0c448a6babed03ff14b06c343e322343011b7d8855f0faff610cf88e6a7c0de1_prof);
+        $__internal_904cba29a10d5fa8ccf2b2a3fb9b4e901e623458e5b3362057ecb24a75b30bb3->leave($__internal_904cba29a10d5fa8ccf2b2a3fb9b4e901e623458e5b3362057ecb24a75b30bb3_prof);
 
     }
 
-    // line 46
+    // line 52
     public function block_body($context, array $blocks = array())
     {
-        $__internal_7248e3803e19f6d9291248989019b77f41a0f28d0dabd196f9ad7afb69845ef0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_7248e3803e19f6d9291248989019b77f41a0f28d0dabd196f9ad7afb69845ef0->enter($__internal_7248e3803e19f6d9291248989019b77f41a0f28d0dabd196f9ad7afb69845ef0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_5f4b02b2f7cbd7aba52c98cebe2bd2420db15b9cb553961ff0c402de9b30543f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_5f4b02b2f7cbd7aba52c98cebe2bd2420db15b9cb553961ff0c402de9b30543f->enter($__internal_5f4b02b2f7cbd7aba52c98cebe2bd2420db15b9cb553961ff0c402de9b30543f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        // line 47
+        // line 53
         echo "  ";
         if (array_key_exists("content", $context)) {
-            // line 48
+            // line 54
             echo "    ";
             echo (isset($context["content"]) ? $context["content"] : $this->getContext($context, "content"));
             echo "
   ";
         }
         
-        $__internal_7248e3803e19f6d9291248989019b77f41a0f28d0dabd196f9ad7afb69845ef0->leave($__internal_7248e3803e19f6d9291248989019b77f41a0f28d0dabd196f9ad7afb69845ef0_prof);
+        $__internal_5f4b02b2f7cbd7aba52c98cebe2bd2420db15b9cb553961ff0c402de9b30543f->leave($__internal_5f4b02b2f7cbd7aba52c98cebe2bd2420db15b9cb553961ff0c402de9b30543f_prof);
 
     }
 
-    // line 55
+    // line 61
     public function block_footer($context, array $blocks = array())
     {
-        $__internal_f3cfdfcb5e484ca1bc56c3d233aae3e2de69c986a5ba65bdb9ef4affc92ca437 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_f3cfdfcb5e484ca1bc56c3d233aae3e2de69c986a5ba65bdb9ef4affc92ca437->enter($__internal_f3cfdfcb5e484ca1bc56c3d233aae3e2de69c986a5ba65bdb9ef4affc92ca437_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footer"));
+        $__internal_1df7968d45ae8c54f76c5bddcf85555bd2c72ed1fe5f3b1fcfd442c1bd49a690 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_1df7968d45ae8c54f76c5bddcf85555bd2c72ed1fe5f3b1fcfd442c1bd49a690->enter($__internal_1df7968d45ae8c54f76c5bddcf85555bd2c72ed1fe5f3b1fcfd442c1bd49a690_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 56
+        // line 62
         echo "<footer class=\"row page-footer\">
     <div class=\"col-sm-5 col-sm-offset-1\">
       <h2><i class=\"fa fa-user\" aria-hidden=\"true\"></i> Corinne Alexandre</h2>
@@ -223,11 +229,11 @@ class __TwigTemplate_0573ae2f27cec4f9552de37605e86f092bc3264fec3afcce6b17dcdc889
       <h2>Site Map</h2>
       <ul class=\"list-unstyled\">
       ";
-        // line 73
+        // line 79
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["menuItems"]) ? $context["menuItems"] : $this->getContext($context, "menuItems")));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 74
+            // line 80
             echo "        <li><a href=\"/";
             echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "name", array()), "html", null, true);
             echo "\">";
@@ -238,30 +244,30 @@ class __TwigTemplate_0573ae2f27cec4f9552de37605e86f092bc3264fec3afcce6b17dcdc889
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 76
+        // line 82
         echo "        <li><a href=\"/list\">Panneau d'administration</a></li>
       </ul>
     </div>
 </footer>
 ";
         
-        $__internal_f3cfdfcb5e484ca1bc56c3d233aae3e2de69c986a5ba65bdb9ef4affc92ca437->leave($__internal_f3cfdfcb5e484ca1bc56c3d233aae3e2de69c986a5ba65bdb9ef4affc92ca437_prof);
+        $__internal_1df7968d45ae8c54f76c5bddcf85555bd2c72ed1fe5f3b1fcfd442c1bd49a690->leave($__internal_1df7968d45ae8c54f76c5bddcf85555bd2c72ed1fe5f3b1fcfd442c1bd49a690_prof);
 
     }
 
-    // line 82
+    // line 88
     public function block_footerAssets($context, array $blocks = array())
     {
-        $__internal_de7006ddb2df947f46e06263492043fad2eda5c6f00631717b77e3f8dbd82a77 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_de7006ddb2df947f46e06263492043fad2eda5c6f00631717b77e3f8dbd82a77->enter($__internal_de7006ddb2df947f46e06263492043fad2eda5c6f00631717b77e3f8dbd82a77_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footerAssets"));
+        $__internal_7de9f23514c9a84251d94f7212ef5da43e8ea6347c8eab9d5dc06e71ce74bbba = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_7de9f23514c9a84251d94f7212ef5da43e8ea6347c8eab9d5dc06e71ce74bbba->enter($__internal_7de9f23514c9a84251d94f7212ef5da43e8ea6347c8eab9d5dc06e71ce74bbba_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footerAssets"));
 
-        // line 83
+        // line 89
         echo "<script href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("bower_components/bootstrap/dist/js/bootstrap.min.js"), "html", null, true);
         echo "\" type=\"text/javascript\"></script>
 ";
         
-        $__internal_de7006ddb2df947f46e06263492043fad2eda5c6f00631717b77e3f8dbd82a77->leave($__internal_de7006ddb2df947f46e06263492043fad2eda5c6f00631717b77e3f8dbd82a77_prof);
+        $__internal_7de9f23514c9a84251d94f7212ef5da43e8ea6347c8eab9d5dc06e71ce74bbba->leave($__internal_7de9f23514c9a84251d94f7212ef5da43e8ea6347c8eab9d5dc06e71ce74bbba_prof);
 
     }
 
@@ -277,7 +283,7 @@ class __TwigTemplate_0573ae2f27cec4f9552de37605e86f092bc3264fec3afcce6b17dcdc889
 
     public function getDebugInfo()
     {
-        return array (  259 => 83,  253 => 82,  242 => 76,  231 => 74,  227 => 73,  208 => 56,  202 => 55,  191 => 48,  188 => 47,  182 => 46,  174 => 31,  168 => 30,  156 => 22,  144 => 16,  140 => 15,  136 => 14,  131 => 13,  125 => 12,  113 => 5,  107 => 4,  96 => 85,  94 => 82,  91 => 81,  89 => 55,  83 => 51,  81 => 46,  66 => 33,  64 => 30,  61 => 29,  57 => 27,  51 => 25,  49 => 24,  46 => 23,  44 => 22,  41 => 21,  39 => 12,  36 => 11,  34 => 4,  29 => 1,);
+        return array (  265 => 89,  259 => 88,  248 => 82,  237 => 80,  233 => 79,  214 => 62,  208 => 61,  197 => 54,  194 => 53,  188 => 52,  180 => 31,  174 => 30,  162 => 22,  150 => 16,  146 => 15,  142 => 14,  137 => 13,  131 => 12,  119 => 5,  113 => 4,  102 => 91,  100 => 88,  97 => 87,  95 => 61,  89 => 57,  87 => 52,  66 => 33,  64 => 30,  61 => 29,  57 => 27,  51 => 25,  49 => 24,  46 => 23,  44 => 22,  41 => 21,  39 => 12,  36 => 11,  34 => 4,  29 => 1,);
     }
 
     public function getSource()
@@ -324,6 +330,12 @@ class __TwigTemplate_0573ae2f27cec4f9552de37605e86f092bc3264fec3afcce6b17dcdc889
       <img src=\"img/logo/logo-250-text.png\" alt=\"Logo de Sophro 44\" class=\"brand-logo\">
       <h1>Sophrologie Relaxation Art Thérapie</h1>
       <small>&Agrave; l'intérieur de soi, vers le chemin du bien-être</small>
+      <p class=\"lead\">
+        Consacrer un moment de détente rien que pour soi, faire une pause pour se ressourcer est devenu un besoin vital. 
+      Parce que la sophrologie permet d'apaiser les tensions et de s'écouter, la relaxation est la clé de notre bien-être.
+      Savoir être en accord avec soi-même et apprendre à lâcher prise est un véritable trésor.
+      Saurez-vous en profiter?
+      </p>
     </header>
     
     <hr>

@@ -175,3 +175,8 @@ a57a28,127.0.0.1,GET,http://localhost:8000/Domaines,1475946577,,200
 aeb87d,127.0.0.1,GET,http://localhost:8000/La%20Sophrologie,1475946582,,200
 ac3714,127.0.0.1,GET,http://localhost:8000/La%20Sophrologie,1475946696,,200
 bb45d7,127.0.0.1,GET,http://localhost:8000/Contact,1475946706,,200
+be33b8,127.0.0.1,GET,http://localhost:8000/Accueil,1475948611,d4431a,200
+d4431a,127.0.0.1,GET,http://localhost:8000/Accueil,1475948611,,500
+26e5c1,127.0.0.1,GET,http://localhost:8000/Accueil,1475948626,,200
+ac7962,127.0.0.1,GET,http://localhost:8000/Contact,1475948631,,200
+a6b3bd,127.0.0.1,GET,http://localhost:8000/Contact,1475948783,,200
