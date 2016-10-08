@@ -21,15 +21,19 @@
 
   {% block pageTitle %}<title>sophro44</title>{% endblock %}
 </head>
-<body>
+{% if photoUrl is defined %}
+<body style="background: url('{{photoUrl}}') no-repeat center fixed" class="accueil">
+{% else %}
+<body style="background: url('../img/sea.jpg') no-repeat center fixed" class="accueil">
+{% endif %}
 {% block nav %}
   <h1>Panneau d'administration</h1>
 {% endblock %}
 <!-- END NAV  -->
 
 <!-- MAIN SECTION -->
-<section class="container-fluid page-bg accueil row"> <!-- HAS BG on the whole page -->
-  <article id="content" class="blacked col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+<section class="container-fluid page-bg row"> <!-- HAS BG on the whole page -->
+  <article id="content" class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 content">
 
 {% for flash_message in app.session.flashBag.get('notice') %}
     <div class="flash-notice">
@@ -44,19 +48,8 @@
 
 <!-- FOOTER SECTION  -->
 {% block footer %}
-<footer id="page-footer">
+<footer class="row page-footer">
   <div class="row">
-    <div class="col-sm-5 col-sm-offset-1">
-      <h2><i class="fa fa-user" aria-hidden="true"></i> Corinne Alexandre</h2>
-      <ul class="list-unstyled">
-          <li>Sophrologue certifié</li>
-          <li>
-            <i class="fa fa-envelope" aria-hidden="true"></i> 
-            <a href="mailto:cosophrorelax44@gmail.com?Subject=Prise%20de%20%contact%20depuis%20le%20site">cosophrorelax44@gmail.com
-            </a>
-          </li>
-      </ul>
-    </div>
     <div class="col-sm-3 col-sm-offset-3">
       <h2>Site Map</h2>
       <ul class="list-unstyled">

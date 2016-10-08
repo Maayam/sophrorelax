@@ -42,6 +42,13 @@ class Page
      */
     private $weight;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="photoUrl", type="string", length=255, nullable=true)
+     */
+    private $photoUrl;
+
 
     /**
      * Set id

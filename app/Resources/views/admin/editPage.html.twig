@@ -10,11 +10,21 @@
 
 {% block headerAssets %}
 	{{ parent() }}
-	  <script src="{{ asset('/js/tinymce/tinymce.min.js') }}"></script>
-	  <script>
+<!-- 	  <script src="{{ asset('/js/tinymce/tinymce.min.js') }}"></script> -->
+<!-- 	  <script>
 		  tinymce.init({
 			  selector: '#form_content',
 			  language: 'fr_FR'
 		  });
-	  </script>
+	  </script> -->
+	  <script src="{{ asset('/js/ckeditor/ckeditor.js') }}"></script>
+{% endblock %}
+
+{% block footerAssets %}
+	{{ parent() }}
+    <script>
+        // Replace the <textarea id="editor1"> with a CKEditor
+        // instance, using default configuration.
+        CKEDITOR.replace( 'form_content' );
+    </script>
 {% endblock %}

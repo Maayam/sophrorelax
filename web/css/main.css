@@ -93,8 +93,7 @@ header p{
 
 .accueil{
   margin:0;
-  padding:0;
-  background: url('../img/sea.jpg') no-repeat center fixed; 
+  padding:0; 
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size: cover; /* version standardisée */
 }

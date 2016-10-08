@@ -21,7 +21,11 @@
 
   {% block pageTitle %}<title>sophro44</title>{% endblock %}
 </head>
-<body class="accueil">
+{% if photoUrl is defined and photoUrl != '' %}
+<body style="background: url('{{photoUrl}}') no-repeat center fixed" class="accueil">
+{% else %}
+<body style="background: url('../img/sea.jpg') no-repeat center fixed" class="accueil">
+{% endif %}
 
 {% block nav %}
   {% include 'partial/nav.html.twig' %}

@@ -173,22 +173,22 @@ class PageController extends Controller
     		$name = $menuItems[0]['name'];
     	}
 
-    	$content = $this->findPageContentByName($name);
-    	$content = htmlspecialchars_decode($content);
+    	$page = $this->findPageByName($name);
+    	// return new JsonResponse($page['photoUrl']);
+    	$content = htmlspecialchars_decode($page['content']);
 
-    	if( $name == "Contact"){
-	        return $this->render('page/contact.html.twig', array(
+    	$data =  array(
 	        	"name" => $name,
 	        	"menuItems" => $menuItems,
-	        	"content" => $content
-	        ));
+	        	"content" => $content,
+	        	"photoUrl" => $page['photoUrl']
+	        );
+
+    	if( $name == "Contact"){
+	        return $this->render('page/contact.html.twig', $data);
     	}
 
-        return $this->render('base.html.twig', array(
-        	"name" => $name,
-        	"menuItems" => $menuItems,
-        	"content" => $content
-        ));
+        return $this->render('base.html.twig', $data);
     }
 
 	private function findpage($id) {
@@ -233,18 +233,18 @@ class PageController extends Controller
 		return $pages;
 	}
 
-	private function findpageContentByName($name) {
+	private function findPageByName($name) {
 	//returns all plots which match with a name
 		$em = $this->getDoctrine()->getManager();
 
 		$query = $em->createQuery(
-			'SELECT page.name, page.content
+			'SELECT page.name, page.content, page.photoUrl
 			FROM AppBundle\Entity\Page page
 			WHERE page.name = :name'
 		)->setParameters(array('name' => $name));;
 
 		$content = $query->getResult();
-		return $content[0]['content'];
+		return $content[0];
 	}
 
 	private function deletePage($id) {
